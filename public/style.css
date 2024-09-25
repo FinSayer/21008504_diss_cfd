@@ -1,0 +1,12 @@
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  /* 100% of the viewport width */
+    height: 100%; /* 100% of the viewport height */
+}
+
+.lil-gui { 
+	--width: 400px;
+    --height: 400px;
+}
