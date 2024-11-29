@@ -12,7 +12,7 @@ class WaitGroup {
         }
         let current = n + Atomics.add(this.binarySemaphore, 0, n);
         if (current < 0) {
-            return
+            throw new Error("NEGATIVE!");
         }
         if (current > 0){
             return;
