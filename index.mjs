@@ -5,6 +5,13 @@ const app = express();
 // Render using .ejs
 app.set('view engine', 'ejs');
 
+app.use((req, res, next) => {
+    res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
+    res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+    next();
+});
+
+
 app.get('/', (request, response) => {
     response.render("main");
 })

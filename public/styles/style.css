@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+  
+#sceneCanvas {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.lil-gui { 
+	--width: 400px;
+    --height: 400px;
+}
+
+#labelContainer {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
